@@ -1,0 +1,41 @@
+Package: AdaDTN
+Type: Package
+Title: Adaptive Deep Tensor Networks for Function-on-Function Regression
+Version: 1.0.0
+Authors@R: c(
+    person("Sude", "Gurer",
+      email = "sudegurer4@gmail.com",
+      role = "aut"),
+    person("Gizel", "Bakicierler Sezer",
+      email = "gizel.bakicierler@marmara.edu.tr",
+      role = "aut"),
+    person("Han Lin", "Shang",
+      email = "hanlin.shang@mq.edu.au",
+      role = "aut",
+      comment = c(ORCID = "0000-0003-1769-6430")),
+    person("Ufuk", "Beyaztas",
+      email = "ufukbeyaztas@gmail.com",
+      role = c("aut", "cre", "cph"),
+      comment = c(ORCID = "0000-0002-5208-4950"))
+  )
+Description: Functions for fitting adaptive deep tensor networks for nonlinear
+    function-on-function regression with multiple functional and scalar
+    predictors. The package learns predictor-specific functional bases
+    end-to-end through differentiable quadrature and constructs interpretable
+    coefficient surfaces on the response grid. It includes tools for model
+    fitting, cross-validation, hyperparameter tuning, prediction, split
+    conformal prediction bands, extraction and visualization of learned model
+    components, training summaries, and simulation-based data generation.
+Depends: R (>= 3.5.0)
+Imports:
+    goffda,
+    graphics,
+    plot3D,
+    stats,
+    torch,
+    utils
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+ByteCompile: true
+RoxygenNote: 7.1.2

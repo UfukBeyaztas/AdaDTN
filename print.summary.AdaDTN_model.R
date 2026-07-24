@@ -1,0 +1,16 @@
+print.summary.AdaDTN_model <- function(x, ...) {
+  cat("Summary of adaptive deep tensor network fit\n\n")
+  cat("Functional predictors:", x$n_functional_predictors, "\n")
+  cat("Response-grid points:", x$n_response_grid_points, "\n")
+  cat("Adaptive bases:", paste(x$n_base_in, collapse = ", "), "\n\n")
+  cat("Subject split:\n")
+  print(x$split_sizes)
+  cat("\nOptimization:\n")
+  cat("Device:", x$device, "\n")
+  cat("Epochs completed:", x$epochs_completed, "\n")
+  cat("Best validation epoch:", x$best_validation_epoch, "\n")
+  cat("\nMean squared errors:\n")
+  print(x$mse)
+  cat("\nStored conformal half-width:", format(x$q_hat, digits = 6), "\n")
+  invisible(x)
+}
