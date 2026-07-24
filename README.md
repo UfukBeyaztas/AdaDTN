@@ -2,6 +2,8 @@ Type the following to install the AdaDTN package:
 
 
 install.packages("remotes")
+
+
 remotes::install_github("UfukBeyaztas/AdaDTN")
 
 
